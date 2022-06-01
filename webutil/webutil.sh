@@ -1,5 +1,8 @@
 # Note: the DB_USER schema has to exists before to run this command.
 
+# Setup env variables
+. ../env.sh
+
 # install the DB part of Webutil
 sqlplus $DB_USER/$DB_PASSWORD@$DB_TNS @$ORACLE_HOME/forms/create_webutil_db.sql
 
@@ -41,5 +44,5 @@ diff extensions.jnlp extensions.jnlp.orig
 # and move the one from $ORACLE_HOME/forms to avoid using wrong library.
 mkdir $ORACLE_HOME/forms/orig
 cp $ORACLE_HOME/forms/webutil.* $HOME/oracle/formsmodules
-mv $ORACLE_HOME/forms/webutil.* $ORACLE_HOME/forms/orig/webutil.*
+mv $ORACLE_HOME/forms/webutil.* $ORACLE_HOME/forms/orig/.
 
