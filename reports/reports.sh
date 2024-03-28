@@ -18,7 +18,7 @@ cd -
 # - WLS_REPORTS managed server
 # - reportsTools
 # - reportsServer
-$ORACLE_HOME/oracle_common/common/bin/wlst.sh extend_domain_report.py
+$ORACLE_HOME/oracle_common/common/bin/wlst.sh reports.py
 
 # Make reports cache
 /u01/oracle/middleware/repcache
